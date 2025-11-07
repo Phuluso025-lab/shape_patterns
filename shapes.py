@@ -11,8 +11,10 @@ def area_square(side:int)->int:
     Returns:
         int: The area of the square.
     """
-    
-    return 0
+    area_square = side.__int__ * side.__int__
+    calculate_area_square = (side.__int__)
+    return calculate_area_square.__int__
+print(f"The area of the square is {area_square.__int__}")
 
 
 def area_triangle(base:int, height:int)->float:
@@ -27,8 +29,10 @@ def area_triangle(base:int, height:int)->float:
     Returns:
         float: The area of the triangle.
     """
-    
-    return 0.0
+    area_triangle = 1/2 * base * height
+    calculate_area_triangle = (base.__int__, height.__int__)
+    return calculate_area_triangle(float)
+print(f"The area of the triangle is {area_triangle.__int__}")
 
 def area_circle(radius:int)->float:
     
@@ -41,8 +45,10 @@ def area_circle(radius:int)->float:
     Returns:
         float: The area of the circle.
     """
-    
-    return 0.0
+    area_circle = radius.__int__**2
+    calculate_area_circle = (radius.__int__)
+    return calculate_area_circle(float)
+print(f"The area of the circle is {area_circle.__int__}")
 
 def area_rectangle(length:int, width:int)->int:
     
@@ -56,9 +62,10 @@ def area_rectangle(length:int, width:int)->int:
     Returns:
         int: The area of the rectangle.
     """
-    
-    return 0
-
+    area_rectangle = length.__int__ * width.__int__
+    calculate_area_rectangle = (length.__int__, width.__int__)
+    return calculate_area_rectangle.__int__
+print(f"The area of the rectangle is {area_rectangle.__int__}")
 
 # TODO: Complete the required shapes below
 #       with reference to the unittests
@@ -74,10 +81,14 @@ def draw_square(height:int)->None:
         None: Prints the square pattern directly to console.
         
     """
-    pass
-
-
-
+print("Here's a square")
+print("************")
+print("*          *")
+print("*          *")
+print("*          *")
+print("*          *")
+print("************")
+print("")
 def draw_triangle(height:int)->None:
     
     """
@@ -91,8 +102,14 @@ def draw_triangle(height:int)->None:
     
         
     """
-    
-    pass
+print("Here's a triangle")
+print("     1     ")
+print("    222    ")
+print("   33333   ")
+print("  4444444  ")
+print(" 555555555 ")
+print("66666666666")
+print("")
 
 def draw_triangle_reversed(height:int)->None:
     
@@ -108,9 +125,14 @@ def draw_triangle_reversed(height:int)->None:
         
 
     """
-    
-    pass
-
+print("Here's an triangle_reversed")
+print("11111111111")
+print(" 222222222 ")
+print("  3333333  ")
+print("   44444   ")
+print("    555    ")
+print("     6     ")
+print("")
 # TODO: BONUS QUESTION
 def draw_pyramid(height:int)->None:
     
@@ -124,9 +146,13 @@ def draw_pyramid(height:int)->None:
         None: Prints the pyramid pattern directly to console.
         
     """
-    
-    pass
-         
+print("Here's a pyramid")
+print("     *     ")
+print("    ***    ")
+print("   *****   ")
+print("  *******  ")
+print(" ********* ")
+print("***********")         
                 
 # TODO: add support for other shapes
 def draw(shape:str, height:int)->None:
